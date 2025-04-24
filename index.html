@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Wellness Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+    <div class="container">
+    <div class="header">
+      <h1 class="title">Mental Wellness Journal</h1>
+      <button onclick="toggleDarkMode()" id="themeToggle" class="toggle-btn">Dark Mode</button>
+    </div>
+
+    <div class="emoji-selector">
+      <span data-mood="😊">😊</span>
+      <span data-mood="😔">😔</span>
+      <span data-mood="😡">😡</span>
+      <span data-mood="😌">😌</span>
+      <span data-mood="😩">😩</span>
+    </div>
+
+    <textarea id="note" class="note-input" placeholder="Please describe your emotion..."></textarea>
+    <button onclick="saveEntry()" id="saveBtn" class="save-btn">Save Mood</button>
+    <button onclick="exportData()" class="export-btn">Export Data</button>
+
+    <h2 class="calendar-title">Mood Calender</h2>
+    <div class="calendar" id="calendar"></div>
+  </div>
+  <footer class="footer">
+    Developed by Aditya Singh
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
